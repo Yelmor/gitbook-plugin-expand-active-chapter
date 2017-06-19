@@ -1,6 +1,6 @@
 require(['gitbook', 'jQuery'], function(gitbook, $) {
   var EXPANDED_CLASSNAME = 'expanded',
-      CHAPTER = '.chapter',
+      CHAPTER = '.chapter';
   var init = function () {
     collapseAll();
     expandUntil($(CHAPTER + '.active'));
@@ -11,9 +11,8 @@ require(['gitbook', 'jQuery'], function(gitbook, $) {
   };
 
   var expandUntil = function($chapter){
-    var $chapters_to_collapse = $chapter.parents(CHAPTER).add($chapter);
-    console.log($chapters_to_collapse);
-    $chapters_to_collapse.addClass(EXPANDED_CLASSNAME);
+    var $chapters_to_expand = $chapter.parents(CHAPTER).add($chapter);
+    $chapters_to_expand.addClass(EXPANDED_CLASSNAME);
   };
 
   gitbook.events.bind('page.change', function() {
