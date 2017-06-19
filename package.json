@@ -2,7 +2,7 @@
   "name": "gitbook-plugin-expand-active-chapter",
   "description": "Expand as the user step through the chapters.",
   "main": "index.js",
-  "version": "0.0.2",
+  "version": "1.0.0",
   "engines": {
     "gitbook": ">=0.4.6"
   },
