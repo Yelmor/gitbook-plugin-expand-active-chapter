@@ -1,20 +1,18 @@
 require(['gitbook', 'jQuery'], function(gitbook, $) {
   var EXPANDED_CLASSNAME = 'expanded',
       CHAPTER = '.chapter',
-      ARTICLES = '.articles',
-      TRIGGER_TEMPLATE = '<i class="exc-trigger fa"></i>',
-      LS_NAMESPACE = 'expChapters';
   var init = function () {
     collapseAll();
-    expand($(CHAPTER + '.active'));
+    expandUntil($(CHAPTER + '.active'));
   };
   
   var collapseAll = function(){
     $(CHAPTER + '.' + EXPANDED_CLASSNAME).removeClass(EXPANDED_CLASSNAME);
   };
 
-  var expand = function($chapter){
+  var expandUntil = function($chapter){
     var $chapters_to_collapse = $chapter.parents(CHAPTER).add($chapter);
+    console.log($chapters_to_collapse);
     $chapters_to_collapse.addClass(EXPANDED_CLASSNAME);
   };
 
