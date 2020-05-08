@@ -1,15 +1,15 @@
 {
-  "name": "gitbook-plugin-expand-active-chapter",
+  "name": "gitbook-plugin-expand-active-chapter-alt",
   "description": "Expand as the user step through the chapters.",
   "main": "index.js",
   "version": "1.0.0",
   "engines": {
     "gitbook": ">=0.4.6"
   },
-  "homepage": "https://github.com/ycmjason/gitbook-plugin-expand-active-chapter",
+  "homepage": "https://github.com/Yelmor/gitbook-plugin-expand-active-chapter",
   "repository": {
     "type": "git",
-    "url": "https://github.com/ycmjason/gitbook-plugin-expand-active-chapter"
+    "url": "https://github.com/Yelmor/gitbook-plugin-expand-active-chapter"
   },
   "license": "MIT"
 }
